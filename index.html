@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>Mountain kingdom</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+  <div class="background_img">
+    <div class="container">
+      <div id="modalLogin" class="modal modal-to-close">
+        <div class="modal-content">
+                <p>Are you a Mountain Knight?</p>
+          <form id="form_post" action="https://recruitment-api.pyt1.stg.jmr.pl/login" method="post" name="form">
+                <input name="login" type="email" placeholder="Email" class="line_input"/>
+                <input name= "password" type="password" placeholder="Password" class="line_input" />
+                <button class="page_button login_button">Log in</button>
+          </form>
+        </div>
+      </div>
+      <nav class="navbar" id="top_navbar">
+              <a href="#" title="About">About</a>
+              <a href="#" title="Offer">Offer</a>
+              <a id="menu_icon"><img  src="images/menu_icon.png" alt="menu icon"><span>Menu</span></a>
+              <a href="#" title="Gallery">Gallery</a>
+              <a href="#" title="Gallery">Contact</a>
+              <a href="#" class="burger-nav"></a>
+      </nav>
+      <div class="log_info">
+        <p class="company_name">
+          Mountain kingdom
+        </p>
+
+        <button id="open_popup" class="page_button">
+          Enter the gates
+        </button>
+
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <p class="copy">
+        &copy;2019 Mountain Kingdom
+      </p>
+      <nav class="navbar_bottom">
+        <a href="#" title="cookies">Cookies</a>
+        &#124;
+        <a href="#" title="privacy">Privacy</a>
+      </nav>
+      <p class="copy_info">
+        Design by <span>Wizard of Oz</span>
+      </p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+
+</html>

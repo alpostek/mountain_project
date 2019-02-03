@@ -1,0 +1,336 @@
+/*reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*reset CSS*/
+
+/*fonts*/
+@font-face {
+    font-family: 'lobsterregular';
+    src: url('../fonts/lobster-regular-webfont.eot');
+    src: url('../fonts/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/lobster-regular-webfont.svg') format('svg'),
+         url('../fonts/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansbold';
+    src: url('../fonts/josefinsans-bold-webfont.eot');
+    src: url('../fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-bold-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sanslight';
+    src: url('../fonts/josefinsans-light-webfont.eot');
+    src: url('../fonts/josefinsans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-light-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-light-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-light-webfont.ttf') format('truetype'),
+         url('../fonts/josefinsans-light-webfont.svg#josefin_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.eot');
+    src: url('../fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sanssemibold';
+    src: url('../fonts/josefinsans-semibold-webfont.eot');
+    src: url('../fonts/josefinsans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-semibold-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/josefinsans-semibold-webfont.svg#josefin_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+
+.container{
+  max-width: 1920px;
+  width: 100%;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+}
+
+.background_img{
+  background-image: url("../images/bg_banner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a{
+  font-family: 'josefin_sansregular';
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar a{
+  margin: 40px 50px 0;
+}
+
+.burger-nav{
+  display: none;
+}
+
+.company_name{
+  font-family: 'lobsterregular';
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.log_info{
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.page_button{
+  background-image: 	url("../images/button.png");
+	background-repeat:	no-repeat;
+  background-color:	transparent;
+  width: 265px;
+  height: 48px;
+	border:	none;
+  color: #ffffff;
+  font-family: 'josefin_sansbold';
+  text-transform: uppercase;
+}
+
+.log_info > .page_button{
+  margin-top: 80px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #afafaf;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'josefin_sansregular';
+  line-height: 60px;
+  font-size: 11px;
+  padding: 0 80px;
+}
+
+.footer nav a{
+  color: #afafaf;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin: auto 10px;
+}
+
+.footer > .copy{
+  text-transform: uppercase;
+}
+.footer > .copy_info{
+  font-family: 'josefin_sanslight';
+}
+.footer > .copy_info > span{
+    font-family: 'josefin_sansbold';
+		color: #ffffff;
+}
+
+/*media queries*/
+@media only screen and (max-width : 768px){
+  .navbar a{
+    margin: 40px 20px 0;
+  }
+  .footer{
+    padding: 0 40px;
+  }
+  .company_name{
+    font-size: 50px;
+  }
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content{
+  background-color: #ffffff;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'josefin_sansregular';
+  padding: 45px 50px;
+}
+.modal-content p{
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.modal-content form{
+  width: 100%;
+}
+.modal input, .login_button{
+  display: block;
+}
+.login_button{
+  margin: 40px auto auto;
+}
+
+.line_input{
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-family: 'josefin_sansregular';
+  margin: 30px auto;
+  padding: 5px;
+  width: 100%;
+}
+
+#menu_icon span{
+	display: none;
+}
+
+/* Extra Small Devices, Phones */
+    @media only screen and (max-width : 560px) {
+      .log_info{
+        margin-top: 50px;
+      }
+      .footer{
+        flex-direction: column;
+        height: auto;
+        line-height: normal;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+      }
+      .footer nav a{
+        margin: auto;
+      }
+      .footer p, nav{
+        margin-top: 10px;
+      }
+      .navbar{
+        flex-direction: column;
+      }
+      .navbar.responsive a{
+        display: block !important;
+      }
+      .navbar a:not(#menu_icon){
+        display: none;
+      }
+      #menu_icon{
+        margin: 20px auto auto;
+        cursor: pointer;
+        order: -1;
+      }
+			#menu_icon span{
+				display: block;
+				font-size: 12px;
+				text-align: center;
+				margin-top: 5px;
+			}
+      .navbar.responsive{
+        position: relative;
+      }
+    }
