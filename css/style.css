@@ -126,6 +126,7 @@ body, html {
 margin: 0 auto;
 overflow: hidden;
 position: relative;
+z-index: 1;
 }
 
 .background_img{
@@ -148,6 +149,14 @@ position: relative;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navbar #menu_icon{
+	background-image: url("../images/menu_icon.png");
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		min-width: 60px;
+		min-height: 65px;
 }
 
 .navbar a{
@@ -311,26 +320,40 @@ position: relative;
         margin-top: 10px;
       }
       .navbar{
-        flex-direction: column;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+				z-index: 2;
       }
+			.navbar a {
+				font-size: 16px;
+			}
       .navbar.responsive a{
         display: block !important;
       }
       .navbar a:not(#menu_icon){
         display: none;
+				margin: 30px auto auto auto;
       }
-      #menu_icon{
-        margin: 20px auto auto;
-        cursor: pointer;
-        order: -1;
-      }
-			#menu_icon span{
-				display: block;
-				font-size: 12px;
-				text-align: center;
-				margin-top: 5px;
-			}
       .navbar.responsive{
         position: relative;
       }
+			.navbar #menu_icon{
+				background-image: url("../images/burger_white.png");
+					background-repeat: no-repeat;
+					min-width: 32px;
+					min-height: 32px;
+					width: auto;
+					height: auto;
+					margin: 20px 10px 0;
+	        cursor: pointer;
+	        order: -1;
+
+			}
     }
+
+		@media only screen and (max-width : 460px){
+			.navbar a{
+				font-size: 14px;
+			}
+		}

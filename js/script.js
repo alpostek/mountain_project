@@ -48,10 +48,20 @@ form.onsubmit = function (e){
   post_data.send(JSON.stringify(login_data));
   console.log(JSON.stringify(login_data));
 
+
   post_data.onloadend = function () {
+    if (this.responseText.status = "error"){
+      alert("Incorrect login or password")
+    }
+    else{
+      alert("You are logged in");
+    }
    console.log(this.responseText);
   };
+    form.reset();
 }
+
+
 
 
   })
